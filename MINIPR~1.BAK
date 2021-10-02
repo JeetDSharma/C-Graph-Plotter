@@ -25,10 +25,10 @@ int main()
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "c:\\tc\\bgi");
     setbkcolor(12);
-    rectangle(100, 100, 460, 300);
+    rectangle(150, 150, 460, 300);
     rectangle(110, 110, 450, 290);
-    outtextxy(230, 120, "SELECT GRAPH TYPE");
-    outtextxy(130, 130, "1: LINE GRAPH");
+    outtextxy(250, 120, "SELECT GRAPH TYPE");
+    outtextxy(150, 130, "1: LINE GRAPH");
     outtextxy(130, 140, "2: PIE CHART");
     outtextxy(130, 150, "3: BAR GRAPH");
     outtextxy(130, 160, "4: 3D BAR GRAPH");
@@ -57,7 +57,7 @@ int main()
 }
 void bar_3dchart() //input is labels and numeric
 {
-    int n, i, a[10], b[10], x = 100, factor_y = 20, max_value_y = 0;
+    int n, i, a[20], b[20], x = 100, factor_y = 20, max_value_y = 0;
     cleardevice(); //clears screen it involves filling screen with background color
     printf("Program to Draw a 3D Bar Chart in C Graphics");
     printf("\n\nEnter Number of values:\t");
@@ -89,8 +89,8 @@ void bar_3dchart() //input is labels and numeric
     }
     setcolor(WHITE);
     //initilizing lines for x and y axis center at(100,420)
-    line(100, 420, 100, 60);  //y axis
-    line(100, 420, 700, 420); //x axis
+    line(150, 420, 100, 60);  //y axis
+    line(150, 420, 700, 420); //x axis
     outtextxy(80, 420, "0");
     y_plot(max_value_y);
     setcolor(11);
