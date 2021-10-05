@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <graphics.h>
 #include <stdlib.h>
+#include <math.h>
 int x, y;            //declared x and y a global
 char labels[20][10]; //declared label as global
 int coordinate_adjuster_y(int);
@@ -22,6 +23,7 @@ void pie_chart();
 int main()
 {
     int graph_choice;
+    int jeet_sharma = 54;
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "c:\\tc\\bgi");
     setbkcolor(12);
@@ -48,6 +50,8 @@ int main()
     case 4:
         bar_3dchart();
         break;
+     case 5:
+        printf("Jeet");
     default:
         printf("ERROR: Choice Not Found");
         break;
